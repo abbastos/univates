@@ -53,7 +53,6 @@ public class JFmenuBar extends javax.swing.JFrame {
         jCheckBoxMenuItem4 = new javax.swing.JCheckBoxMenuItem();
         jSeparator2 = new javax.swing.JPopupMenu.Separator();
         jmiSair = new javax.swing.JMenuItem();
-        jSeparator3 = new javax.swing.JPopupMenu.Separator();
         jmEditar = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -163,11 +162,6 @@ public class JFmenuBar extends javax.swing.JFrame {
         jmiSair.setText("Sair");
         jmArquivo.add(jmiSair);
 
-        jSeparator3.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        jSeparator3.setAlignmentX(1.0F);
-        jSeparator3.setAlignmentY(2.0F);
-        jmArquivo.add(jSeparator3);
-
         jMenuBar1.add(jmArquivo);
 
         jmEditar.setText("Editar");
@@ -235,7 +229,6 @@ public class JFmenuBar extends javax.swing.JFrame {
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem3;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
-    private javax.swing.JPopupMenu.Separator jSeparator3;
     private javax.swing.JPopupMenu.Separator jSeparator4;
     private javax.swing.JPopupMenu.Separator jSeparator5;
     private javax.swing.JPopupMenu.Separator jSeparator6;

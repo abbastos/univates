@@ -131,13 +131,6 @@
                 <Property name="text" type="java.lang.String" value="Sair"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator3">
-              <Properties>
-                <Property name="orientation" type="int" value="1"/>
-                <Property name="alignmentX" type="float" value="1.0"/>
-                <Property name="alignmentY" type="float" value="2.0"/>
-              </Properties>
-            </MenuItem>
           </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jmEditar">
