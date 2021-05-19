@@ -84,7 +84,13 @@ public class JFmenuBar extends javax.swing.JFrame {
         getContentPane().add(jpInferior, java.awt.BorderLayout.PAGE_START);
 
         jmArquivo.setText("Arquivo");
+        jmArquivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmArquivoActionPerformed(evt);
+            }
+        });
 
+        jmiAbrir.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jmiAbrir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/project.png"))); // NOI18N
         jmiAbrir.setText("Abrir");
         jmiAbrir.addActionListener(new java.awt.event.ActionListener() {
@@ -94,12 +100,16 @@ public class JFmenuBar extends javax.swing.JFrame {
         });
         jmArquivo.add(jmiAbrir);
 
+        jmiSalvar.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jmiSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/folder.png"))); // NOI18N
         jmiSalvar.setText("Salvar");
         jmArquivo.add(jmiSalvar);
 
         jmiSalvarComo.setText("Salvar Como");
         jmArquivo.add(jmiSalvarComo);
+
+        jSeparator1.setToolTipText("");
+        jSeparator1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jmArquivo.add(jSeparator1);
 
         jmiExportarHtmil.setText("Exportar HTML");
@@ -158,8 +168,14 @@ public class JFmenuBar extends javax.swing.JFrame {
         jmArquivo.add(jmConfiguracoes);
         jmArquivo.add(jSeparator2);
 
+        jmiSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_DOWN_MASK));
         jmiSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/sign-out.png"))); // NOI18N
         jmiSair.setText("Sair");
+        jmiSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmiSairActionPerformed(evt);
+            }
+        });
         jmArquivo.add(jmiSair);
 
         jMenuBar1.add(jmArquivo);
@@ -179,6 +195,15 @@ public class JFmenuBar extends javax.swing.JFrame {
     private void jCheckBoxMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxMenuItem1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBoxMenuItem1ActionPerformed
+
+    private void jmArquivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmArquivoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jmArquivoActionPerformed
+
+    private void jmiSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmiSairActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jmiSairActionPerformed
 
     /**
      * @param args the command line arguments
