@@ -268,9 +268,6 @@ public class JFtabela extends javax.swing.JFrame {
             tfdCidade.setText("");
             
             tfdNome.requestFocus();
-            
-        
-        
     }//GEN-LAST:event_btnIncluirActionPerformed
 
     private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
@@ -281,7 +278,6 @@ public class JFtabela extends javax.swing.JFrame {
     private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirActionPerformed
         // TODO add your handling code here:
         ((DefaultTableModel) tblCadastro.getModel()).removeRow(tblCadastro.getSelectedRow());
-        
     }//GEN-LAST:event_btnExcluirActionPerformed
 
     /**
